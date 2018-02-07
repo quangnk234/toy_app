@@ -4,6 +4,7 @@ class MicropostsController < ApplicationController
   # GET /microposts
   # GET /microposts.json
   def index
+    # @microposts = Micropost.joins(:user)
     @microposts = Micropost.all
   end
 
